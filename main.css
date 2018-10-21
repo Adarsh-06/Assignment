@@ -1,0 +1,22 @@
+h5{
+	text-align: center;
+	text-shadow: 4px 4px 8px yellow ;
+	font-size: 4em;	
+	
+	
+}
+.container{
+	
+width: 1000px;
+margin: 0 auto ;
+	
+	
+	
+}
+.name-validation, .email-validation, .pwd-validation{
+	color:red;
+}
+
+.width-60{
+	width: 60%;
+}

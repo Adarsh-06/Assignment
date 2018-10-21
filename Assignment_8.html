@@ -1,0 +1,93 @@
+<html lang="en">
+	<head>		
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>     <!--jquery-->
+		<script src="main_8.js"></script>                                                       	 <!--js file-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">  <!--bootstrap-->
+		<link rel="stylesheet" href="main.css">                                                      <!--css-->
+				
+		<title> HTML FORM </title>
+		
+	</head>
+	
+	<body>
+	<div class="container ">
+		<form class= "form-horizontal submit-form">
+			<h5>Registration Form </h5><br><br>
+			<div class="form-group">
+			
+			    <label class="control-label col-sm-3" for="name">Name:*</label>
+			    <div class="col-sm-9">
+					<input type="text" class="form-control f-name width-60 d-inline" placeholder="Enter Full Name" name="fname">
+						<span class="d-none validation name-validation">* Please Enter Your Name </span>
+				</div>
+	
+				<label class="control-label col-sm-3" for="dob">Date of Birth:</label>
+				<div class="col-sm-9">
+					<input type="date" class="form-control width-60 birthday"  name="dob"><br>
+				</div>
+				
+				<label class="control-label col-sm-3" for="email">Email:*</label>
+				<div class="col-sm-9">
+					<input type="email" class="form-control email width-60 d-inline" placeholder="e.g. xxxx@xxxx.com" name="email" >
+					<span class="d-none validation email-validation">* Please Enter Valid Email </span>
+				</div>
+				
+				<label class="control-label col-sm-3" for="psw">Password:*</label>
+				<div class="col-sm-9">
+					<input type="password" class="form-control width-60 pwd d-inline" placeholder="********" name="password" >
+					<span class="d-none validation pwd-validation">* Please Enter Valid Password length</span>
+				</div>
+				
+				<label class="control-label col-sm-3" for="contact">Contact No.:</label>
+				<div class="col-sm-9">
+					<input type="tel" class="form-control width-60 contact" placeholder="12345****" name="email" maxlength="10"><br>
+				</div>
+				
+				<label class="control-label col-sm-3" for="gender">Gender:</label>
+				<div class="col-sm-9">
+					<label class="radio-inline"><input type="radio" id="gender" name="gender"  value="male">Male</label>
+					<label class="radio-inline"><input type="radio" id="gender" name="gender" value="female" >Female</label><br><br>
+				</div>
+
+				<label class="control-label col-sm-3">Developer:</label>
+				<div class="col-sm-9" >
+					<label class="checkbox-inline"><input type="checkbox" class="developer" name="country"  value="frontend" >Front End</label> 
+					<label class="checkbox-inline"><input type="checkbox" class="developer"  name="country" value="backend" >Back End</label>
+					<label class="checkbox-inline"><input type="checkbox" class="developer" name="country"  value="both">Both</label><br><br>
+				</div>
+				
+				<label class="control-label col-sm-3" for="address">Address:</label>
+				<div class="col-sm-9">
+					<textarea cols="45" placeholder="Enter Your Full Address" class="address"></textarea><br><br>
+				</div>
+			
+			
+				<label class="control-label col-sm-3" for="city">City:</label>
+				<div class="col-sm-9">		
+					<select	 class="form-control width-60 city">
+					<option>- Select Current City -</option>
+					<option>Delhi</option>
+					<option>Bangalore</option>
+					<option>Chennai</option>
+					<option>Hyderabad</option>
+					</select><br>
+				</div>
+				
+				<label class="control-label col-sm-3">Resume:</label>
+				<div class="col-sm-9">		
+					<input type="file" name="resume"><br><br>
+				</div>
+				
+				
+				<div style="margin-left:40%">
+				<input type="button" name="submit" value="Submit" class="btn btn-primary submit-btn">
+				<input type="reset" class="btn btn-basic"></div>
+
+
+
+			</div>
+		</form>
+		
+	</body>
+</html>
